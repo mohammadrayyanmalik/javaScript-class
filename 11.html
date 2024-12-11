@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="hello()">Click Here</button>
+    <button onclick="DisplayName()">Display Name</button>
+    <hr>
+
+    <input type="text" id="username">
+    <button ondblclick="submitName()">Sunbmit</button>
+
+<script>
+
+    function hello()
+    {
+        document.write("<h1>hello</h1>")
+    }
+
+    function DisplayName()
+    {
+        document.write("<h1>Rayyan Malik</h1>")
+    }
+
+
+    function submitName()
+    {
+        let username=document.getElementById("username").value;
+        document.write("<h1 Style='background-color:plum'>"+username+"</h1>")
+    }
+   
+
+</script>
+
+</body>
+</html>
