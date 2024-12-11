@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<Script>
+
+let firstNum=parseInt (prompt("Enten first Number"));
+let secondNum=parseInt (prompt("Enten second Number"));
+
+let choice= parseInt(prompt("Enter 1:add  2:sub  3:multi  4:div"));
+
+switch(choice)
+{
+    case 1:
+    document.write("<h> Addition is "+(firstNum+secondNum)+ "</h>")
+    break;
+    case 2:
+    document.write("<h>substraction is "+(firstNum-secondNum)+ "</h>")
+    break;
+    case 3:
+    document.write("<h>Multiplication is "+(firstNum*secondNum)+ "</h>")
+    break;
+    case 4:
+    document.write("<h>Devide is "+(firstNum/secondNum)+ "</h>")
+    break;
+    default:
+    document.write("<h1>invalid input</h1>")    
+    break;
+}
+
+
+</Script>
+
+</body>
+</html>
