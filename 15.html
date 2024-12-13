@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="subject">
+    <button onclick="addContent()">Add</button>
+
+
+
+
+        <script>
+/*
+            const heading=document.createElement("h1")
+
+            const content=document.createTextNode("Hello")
+            heading.appendChild(content)
+            document.body.appendChild(heading)
+*/
+
+            function addContent()
+            {
+                const subject=document.getElementById("subject").value
+                // marquee
+                //const heading=document.createElement("h1");
+                const heading=document.createElement("marquee");
+                const content=document.createTextNode(subject);
+                heading.appendChild(content)
+                document.body.appendChild(heading);
+            }
+
+
+        </script>
+
+</body>
+</html>

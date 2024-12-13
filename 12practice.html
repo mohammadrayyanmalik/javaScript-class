@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: plum;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container"></div>
+    <button onclick="divcontent()">Submit</button>
+<hr>
+
+    <button onclick="circle()">Click Here</button>
+    <button onclick="semicircle()">Click Here</button>
+
+    <script>
+        function divcontent()
+        {
+            document.querySelector(".container").innerHTML="<h1>Rayyan</h1>"
+        }
+
+        function circle()
+        {
+            document.querySelector("div").style.borderRadius="100%"
+        }
+
+        function semicircle()
+        {
+            document.querySelector("div").style.borderradius
+        }
+    </script>
+
+</body>
+</html>
