@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    // this keyword 
+    const product={
+        productId:101,
+        productName:"Laptop",
+        productprice:45000,
+        details:function(){
+            return this.productId+" "+this.productName;
+        },
+        about:function(){
+            return "My productName is "+this.productName+" And that Price is "+this.productprice;
+        },
+        discount :function(){
+            return this.productprice*0.2;
+        },
+        demo:function(name){
+            return name;
+        }
+    }
+
+    //  console.log(product.details())
+     console.log(product.about())
+     console.log(product.discount())
+     console.log("My name is "+name("Rayyan"))
+    
+
+</script>
+
+</body>
+</html>
