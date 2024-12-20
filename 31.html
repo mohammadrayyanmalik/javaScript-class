@@ -10,8 +10,33 @@
 
     <script>
 
+// Array destructuring
         const numbers=[12,32,44,23,883,98]
+
+        const student={
+            id:101,
+            name:"Riya",
+            marks:100,
+
+        }
+
         
+// object destructuring
+        function details({id,name,marks})
+        {
+            console.log(id);
+            console.log(name);
+            console.log(marks);
+        }
+
+        function sumofNumber([a,b])
+        {
+            return a+b
+        }
+
+        
+
+
     </script>
 </body>
 </html>
