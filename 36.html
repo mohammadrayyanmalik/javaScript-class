@@ -7,12 +7,34 @@
 </head>
 <body>
     
+
+    <button id="catfact"> click here</button>
+
+    <div id="fact">cat fact</div>
+
     <script>
 
-        const promise=fetch("https://catfact.ninja/fact")
-        // console.log(promise)
-        promise.then((data)=>{console.log(data.text())});
+        // const promise=fetch("https://catfact.ninja/fact")
+        // // console.log(promise)
+        // promise.then((data)=>{console.log(data.text())});
         
+        document.getElementById("catfact").addEventListener("click",()=>{
+            
+            const promise=fetch("https://catfact.ninja/fact")
+        promise.then(data=>data.json()).
+        then(data=>{document.getElementById("fact").
+        innerHTML=data["fact"]
+
+
+        })
+
+
+
+        })
+        
+
+        
+
 
     </script>
 
