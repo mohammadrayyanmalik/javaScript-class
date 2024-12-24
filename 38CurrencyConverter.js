@@ -13,14 +13,18 @@ fetch("https://api.exchangerate-api.com/v4/latest/"+fromCurrency)
     .then(data => data.json())
     .then((data) => {
 
-        const h1=document.createElement("h1")
-        h1.appendChild(document.createTextNode("Answer is "+(data["rates"][toCurrency]*amount)))
-        document.body.appendChild(h1);
+        // const h1=document.createElement("h1")
+        // h1.appendChild(document.createTextNode("Answer is "+(data["rates"][toCurrency]*amount)))
+        // document.body.appendChild(h1)
+
+        let answer=data["rates"][toCurrency]*amount
+      document.getElementById("answer").textContent=amount+" "+fromCurrency+" ="+answer+ " "+toCurrency
      
     });
 
 
   
+     
 });
 
 
