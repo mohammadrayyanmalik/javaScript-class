@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function study()
+        {
+            return new Promise(function(resolve,reject){
+                let study=true;
+                if(study)
+                    resolve({"id":101,"Name":"Nisha","studyCompleted":"Yes"})
+                else
+                    reject({"id":101,"Name":"Nisha","studyCompleted":"Yes"})
+
+            })
+        }
+
+        function job()
+        {
+            return new Promise(function(resolve,reject){
+                let placed=true;
+                if(placed)
+                    resolve({"companyName":"Xyz"})
+                else
+                    reject("not placed")
+
+
+            })
+        }
+
+
+        async function processData()
+        {
+           const studyData= await study();
+           console.log(studyData)
+
+           const jobData= await job();
+           console.log(jobData)
+        }
+
+
+        processData();
+
+
+    </script>
+</body>
+</html>
