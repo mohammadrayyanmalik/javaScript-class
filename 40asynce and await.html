@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        async function processData()
+        {
+            const data=await fetch("https://api.exchangerate-api.com/v4/latest/USD")
+            console.log(data)
+
+            const jsonData=await data.json();
+            console.log(jsonData["rates"]["INR"])
+            
+        }
+
+          //  processData();// json type ka return type promise hai
+
+
+       async function dictionary()
+        {
+           const response= await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
+           console.log(response)
+           const data=await response.json()
+        //    console.log(data[0]["meanings"][2]["definitions"][2]);
+        console.log(data[0]["phonetics"][0],["audio"])
+
+        }
+
+             // dictionary();
+
+
+        async function products()
+        {
+            const product=await fetch("http://localhost:8080/products")
+            console.log(product)
+
+            const data=await product.json()
+            console.log(data["page"]["size"])
+        }
+
+        // products();
+
+      
+   
+        async function category()
+        {
+            const category=await fetch("http://localhost:8080/users")
+            console.log(category)
+
+            const data=await category.json()
+            console.log(data)
+        }
+
+        category();
+
+
+
+
+
+    </script>
+</body>
+</html>
